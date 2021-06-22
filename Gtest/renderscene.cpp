@@ -4,10 +4,10 @@ renderScene::renderScene(QWidget *parent):QGraphicsView(parent)
 {
     srand(time(NULL));
     scene = new QGraphicsScene(this);
-    this->scene->setSceneRect(0, 0, 750, 950);
+    this->scene->setSceneRect(0, 0, 750, 650);
     this->setScene(scene);
 
-    dobj = new DObjA(350, 900);
+    dobj = new DObjA(350, 600);
     this->scene->addItem(dobj);
 
     connect(dobj, SIGNAL(closeG()), this, SLOT(closeGame()));

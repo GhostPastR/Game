@@ -20,7 +20,7 @@ void MainWindow::on_pushButton_clicked()
     graphicsView = new renderScene(this);
     connect(this->graphicsView, SIGNAL(gameEnd()), this, SLOT(end()));
     graphicsView->setObjectName(QStringLiteral("graphicsView"));
-    graphicsView->setGeometry(QRect(0, 0, 800, 1000));
+    graphicsView->setGeometry(QRect(0, 0, 800, 800));
     ui->label->setText("0");
     ui->label_3->setText("0");
     graphicsView->getLabel(ui->label);
